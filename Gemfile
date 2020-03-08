@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+# git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+# ruby '2.5.1'
 
-gem 'rails', '~> 5.2.1'
-# gem 'rails', '5.1.6'
+# gem 'rails', '~> 5.2.1'
+gem 'rails', '5.1.6'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-	gem 'sqlite3', '~> 1.3.13'
+	gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -32,7 +32,7 @@ group :test do
 end
 
 group :production do
-	gem 'pg', '0.18.4'
+	gem 'pg'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
