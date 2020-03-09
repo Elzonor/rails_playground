@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :author %>
-    <%= form.text_field :author %>
+		<%= form.select(:author, options_for_select([["Lewis Carrol", 1],["Mark Twain", 2]]), { include_blank: true }) %>
   </div>
 
   <div class="field">
     <%= form.label :year %>
-    <%= form.number_field :year %>
+    <%= form.text_field :year %>
   </div>
 
   <div class="actions">
