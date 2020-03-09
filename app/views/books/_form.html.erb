@@ -16,10 +16,10 @@
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
-    <%= form.label :author %>
-		<%= form.select(:author, options_for_select([["Lewis Carrol", 1],["Mark Twain", 2]]), { include_blank: true }) %>
-  </div>
+	<div class="field">
+		<%= form.label :author %>
+		<%= collection_select( :author, :author_id, Author.all, :id, :name, { include_blank: true }, { multiple: false } ) %>
+	</div>
 
   <div class="field">
     <%= form.label :year %>
