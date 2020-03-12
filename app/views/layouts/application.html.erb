@@ -10,10 +10,12 @@
   </head>
 
   <body>
-		<ul class="menu">
-			<li><%= link_to "Welcome", welcome_index_path %></li>
-			<li><%= link_to "About", welcome_about_path %></li>
-		</ul>
+		<p class="menu">
+			<%= link_to "Welcome", welcome_index_path %> |
+			<%= link_to "About", welcome_about_path %> |
+			<%= link_to "Books", books_path %> | 
+			<%= link_to "Authors", authors_path %>
+		</p>
 
     <%= yield %>
   </body>
