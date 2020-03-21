@@ -11,10 +11,11 @@
 
   <body>
 		<p class="menu">
+			<%= link_to "Authors", authors_path %> |
+			<%= link_to "Books", books_path %> |
+			<%= link_to "Publishers", publishers_path %> |
 			<%= link_to "Welcome", welcome_index_path %> |
-			<%= link_to "About", welcome_about_path %> |
-			<%= link_to "Books", books_path %> | 
-			<%= link_to "Authors", authors_path %>
+			<%= link_to "About", welcome_about_path %>
 		</p>
 
     <%= yield %>
