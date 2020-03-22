@@ -21,6 +21,11 @@
 		<%= collection_select( :author, :author_id, Author.all, :id, :name, { include_blank: true }, { multiple: false } ) %>
 	</div>
 
+	<div class="field">
+		<%= form.label :publisher %>
+		<%= collection_select( :publisher, :publisher_id, Publisher.all, :id, :name, { include_blank: true }, { multiple: false } ) %>
+	</div>
+
   <div class="field">
     <%= form.label :year %>
     <%= form.text_field :year %>
